@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+	var library = [{
+		title:"harsha",
+		author:"the Art of LIfe",
+		libraryID:1
+	},{
+		title:"vardhan",
+		author:"the Art of LIfe",
+		libraryID:2
+
+	},{
+		title:"gowd",
+		author:"the Art of LIfe",
+		libraryID:3
+	}
+	];
+ function SortObject() {
+this.sortObj = function (arr) {
+for (let obj of arr) {
+Object.keys(obj).sort();
+}
+return arr
+}
+}
+let user = new SortObject();
+
+console.log( user.sortObj(library) )
+</script>
+</body>
+</html>

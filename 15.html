@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+	let myObj = {
+  name: 'Fred',
+  age: 37,
+  introduction: function(){
+    return `Hello, ${this.name}, how are you?`;
+  }
+}
+
+function getPairs(obj) {
+  let pairsList = [];
+  pairsList = Object.entries(obj);
+  return pairsList;
+}
+
+console.log(getPairs(myObj));
+</script>
+</body>
+</html>

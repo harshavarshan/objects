@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+ var list = [{
+ 	author:"harsha",
+ 	title:"photography",
+ 	readingStatus:true
+ },
+ {
+ 	author:"vardhan",
+ 	title:"photography",
+ 	readingStatus:true
+
+ },
+ {
+ 	author:"Gowd",
+ 	title:"photography",
+ 	readingStatus:false
+ }
+ ];
+ for(var i=0;i<list.length;i++)
+ {
+ 	var book = "'"+list[i].title +"'"+'by ' +list[i].author+".";
+ 	if(list[i].readingStatus)
+ 	{
+ 		alert("Already read"+book);
+ 	}
+ 	else
+ 	{
+ 		alert("you need to study"+book);
+ 	}
+ }
+</script>
+</body>
+</html>

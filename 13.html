@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+	let myObj = {
+  name: 'Fred',
+  age: 37,
+  introduction: function(){
+    return `Hello, ${this.name}, how are you?`;
+  }
+}
+
+function getValues(obj) {
+  return Object.values(obj);
+}
+
+console.log(getValues(myObj));
+</script>
+</body>
+</html>

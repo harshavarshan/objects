@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+	function hasKey(obj, property) {
+    if (obj !== null) {
+      return obj.hasOwnProperty(property);
+    } 
+}
+
+console.log(hasKey({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}, "green")); 
+</script>
+</body>
+</html>

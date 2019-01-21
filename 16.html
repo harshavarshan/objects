@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+	var testObj = {
+prop1: 123,
+prop2: true,
+prop3: "false",
+meth1: function() {
+return this.prop1 + 3;
+}
+};
+var changer = function(obj) {
+var newObj = new Object();
+for (var key in obj) {
+newObj[obj[key]] = key;
+}
+return newObj;
+};
+console.log(changer(testObj));
+</script>
+</body>
+</html>

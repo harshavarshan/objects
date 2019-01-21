@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	
+<script>
+ class Cylinder
+{
+  constructor(r, h) {
+    this.r = r;
+    this.h = h
+    this.v = Math.PI * Math.pow(this.r, 2) * this.h;
+  }
+
+   get volume() {
+    return this.v.toFixed(4);
+  }
+}
+
+console.log((new Cylinder(7,4)).volume);
+</script>
+</body>
+</html>
